@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Total</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            overflow-x: hidden;
+        }
+        header {
+            background: #2ecc71;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+        nav {
+            background: #27ae60;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+            display: inline-block;
+            transition: transform 0.2s ease;
+        }
+        nav a:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-sizing: border-box;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #2ecc71;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (min-width: 600px) {
+            .cards {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .card {
+                width: 300px;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness Total</h1>
+        <p>Tu guía completa para una vida saludable</p>
+    </header>
+    <nav>
+        <a href="#entrenamiento">Entrenamiento</a>
+        <a href="#nutricion">Nutrición</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <section id="entrenamiento">
+        <h2>Planes de Entrenamiento</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180?text=Fuerza" alt="Entrenamiento de Fuerza">
+                <h3>Fuerza</h3>
+                <p>Programa para desarrollar masa muscular y aumentar tu fuerza.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180?text=Cardio" alt="Entrenamiento de Cardio">
+                <h3>Cardio</h3>
+                <p>Rutinas para quemar grasa y mejorar tu resistencia.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x180?text=Flexibilidad" alt="Ejercicios de Flexibilidad">
+                <h3>Flexibilidad</h3>
+                <p>Ejercicios de estiramiento y movilidad para prevenir lesiones.</p>
+            </div>
+        </div>
+    </section>
+    <section id="nutricion">
+        <h2>Consejos de Nutrición</h2>
+        <p>Una alimentación equilibrada es clave para alcanzar tus objetivos de fitness. Aquí encontrarás guías de dieta, recetas saludables y consejos de expertos.</p>
+    </section>
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes preguntas o deseas una asesoría personalizada? Escríbenos a <a href="mailto:info@fitnesstotal.com">info@fitnesstotal.com</a>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Fitness Total. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
